@@ -1,0 +1,71 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+/*.card
+{
+    margin-left: 25%;
+} */
+#padding
+{
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 5em;
+
+}
+.text-style
+{
+ hegiht:10px;
+ width: 50 px;
+}
+.wrap
+{
+  text-align: center;
+  padding-top: 1em;
+}
+.jumbotron {
+      color: gray;
+      background: #ecf0f1;
+        padding-bottom:1em;
+
+    }
+    .navbar-inverse {
+      background: #2c3e50;
+      color: white;
+    }
+    .navbar-inverse .navbar-brand, .navbar-inverse a{
+      color:white;
+    }
+    .navbar-inverse .navbar-nav>li>a {
+      color: white;
+    }
+#w
+{
+	font-weight:800;
+}
+.red {
+	background: red;
+	height: 100px;
+}
+
+.blue{
+ background: blue;
+ height: 100px;
+} */
+
+img {
+width:"304";
+height:"236";
+}
+
+#ff
+{
+  border: 0;
+  border-radius: 0px;
+  padding:  0px;
+  margin-bottom: 0px;
+  color: #555;
+  background-color:blue;
+  box-shadow:0;
+}
+.navbar
+{
+  color:blue;
+}

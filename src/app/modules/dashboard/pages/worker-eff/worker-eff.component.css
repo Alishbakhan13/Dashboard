@@ -1,0 +1,165 @@
+
+.container-fluid
+{
+    padding-top: 2em;
+    padding-left: 20.25vw;
+    background-color:#DCDCDC;
+    padding-bottom: 3em;
+}
+h4
+{
+    text-align: center;
+}
+
+.main-panel .main-content
+{
+    padding:0px;
+}
+.main-panel .main-content
+{
+    margin-top:0em;
+}
+#pad
+{
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+ 
+
+.card 
+{
+    padding: 0.5em;
+    width:100%;
+}
+.card-body
+{
+    padding: 0.5em;
+}
+.col-md-4
+{
+    padding:0.25em;
+    padding-bottom: 0em;
+    padding-top:0em;
+}
+.card-chart
+{
+margin:1em
+}
+.card-footer
+{
+    padding: 0em;
+}
+.main-panel .main-content
+{
+    padding:0px;
+}
+.sidebar-background
+{
+
+    position: unset;
+    z-index: 1;
+    height: 0%;
+    width: 0%;
+    display: block;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+}
+.sidebar
+{
+    background-color:rgb(18,24,106);
+}
+#simple-text {
+    text-transform: uppercase;
+    padding: 5px 0px;
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    white-space: nowrap;
+    font-weight: 400;
+    line-height: 30px;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+}
+
+.card 
+{
+    margin: auto;
+    /*border: 3px solid  gray; */ 
+    padding-top: 0.5em;
+padding-left: 0.095em;
+padding-right: 0.095em;
+padding-bottom:0.5em;
+overflow: hidden;}
+
+#format
+{
+    color:rgb(115, 135, 156);
+    font-size:6.5vh;
+    font-weight:700;
+    overflow: hidden;
+    text-align:center;
+}
+
+.size
+{
+    width: 100%; 
+    height:34vh;
+}
+#cardH
+{
+    margin:auto;
+    text-align:center; 
+   /* background:linear-gradient(135deg, #CE9FFC 0%,#a988f7 100%);*/
+   background: linear-gradient(135deg, #1b5469 0%,#2b2f2d 100%);
+    color:white;
+    height: 10vh;
+    font-size: 2vh;
+    overflow: hidden;
+    
+
+}
+.card-body
+{
+    padding: 0px;
+}
+p{
+    text-align: center;
+    color:rgb(138, 139, 139);
+    font-size:4vh;
+    font-weight:600;
+    text-align:center;
+    overflow: hidden;
+    padding-top: 0.5em
+
+    
+}
+.card-title
+{
+    background-color:#e8ebecbf;
+    margin:0;
+    padding:0;
+    max-height: 9vh;
+}
+.col-md-4 
+{
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-bottom: 0.5em;
+}
+.col-md-6 
+{
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+}
+
+.col-md-8
+{
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    padding-top: .5em;
+}

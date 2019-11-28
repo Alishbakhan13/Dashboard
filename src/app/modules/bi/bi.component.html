@@ -1,0 +1,96 @@
+
+
+<nav class="navbar navbar-dark navbar-light fixed-top " id="id"  style="background-color:lightseagreen;padding: 0rem 1rem;">
+  <a class="navbar-brand" (click)="sethide()" routerLink="/powerbi" routerLinkActive="active"  style="font-size: 1.25em;font-weight: 500;">Dashboard</a>
+
+    
+  <a class="nav-link"   routerLink="/Vendors" style="margin-left:auto"><img  src="assets/img/power.png"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: rgba(255, 255, 255, 0.58);">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+   
+
+
+  <div class="collapse navbar-collapse   " id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" ><mat-checkbox (change)="checkCheckBoxvalue($event)">show table on  chart click </mat-checkbox> </a>
+        </li>
+        <li>
+          <a class="nav-link" ><mat-checkbox (change)="showtables($event)">show tables</mat-checkbox> </a>
+          </li>
+      
+    
+    
+      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Legend Settings
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          
+         <!-- <a class="dropdown-item" >Align left</a>
+          <a class="dropdown-item" >Align Right</a>
+          <a class="dropdown-item" >Align Top</a>
+          <a class="dropdown-item" >Align bottom</a>
+          <a class="dropdown-item" >Disable</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" >Something else here</a> -->
+          <mat-radio-group
+          aria-labelledby="example-radio-group-label"
+          class="example-radio-group"
+          [(ngModel)]="favoriteSeason">
+          <mat-radio-button class="example-radio-button"  aria-checked=true  (click)="vale('left')" >
+              Left
+            </mat-radio-button>
+          <mat-radio-button class="example-radio-button"  *ngFor="let season of seasons"  (click)="vale(season)" >
+            {{season}}
+          </mat-radio-button>
+        </mat-radio-group>
+        </div>
+      </li>
+
+
+      <mat-slide-toggle
+      class="nav-link"
+    
+      [checked]="checked"
+      (change)="label($event)">
+       label Disabled
+     </mat-slide-toggle>
+   <!--  <mat-slide-toggle
+     class="nav-link"
+   
+     [checked]="checked"
+     (change)="value($event)">
+      value enabled
+    </mat-slide-toggle> -->
+      <li class="nav-item">
+        <a class="nav-link disabled"  tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+   
+
+  
+  </div>
+
+    
+     
+
+<!-- Navbar content -->
+</nav> 
+
+<div class="wrapper" style="background-color: rgba(222, 225, 230, 0.42);">
+
+
+  <app-charts  [enable]="enable" (show)="set()"></app-charts>
+<!-- <div class="row" >
+  <div class="col-md-12" >
+  <a style="float: right;" routerLink='/tables'  class="ss">see more</a> 
+  </div>
+</div> -->
+
+
+<app-table   *ngIf=status ></app-table>
+</div>

@@ -1,0 +1,43 @@
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  
+    border: 3px;
+    color:black;
+    background-color: white ;
+   
+  }
+  
+  
+  th, td {
+  
+  
+  }
+  
+  /*td:nth-child(1){background-color: 	#d1d4d6} */
+  
+  th {
+  
+    
+    font-weight: 600;
+    
+    
+   
+  }
+  #color
+  {
+ 
+  
+  }
+  td
+  {
+    color:gray;
+    text-align:  left;
+    
+  
+  }
+  tr:hover {
+  background-color:#F8F8F8;
+  }
+  

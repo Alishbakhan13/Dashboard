@@ -1,0 +1,72 @@
+<div class="wrapper">
+  <div class="main-content">
+          <div class="container-fluid">
+  <h2>Component : {{Seq}} <span><button type="button" class="btn btn-primary" (click)="sendSelected()">Predict Trend</button>
+  </span> </h2>
+  <div id="range-selector-demo">
+  
+      <dx-range-selector
+          id="range-selector"
+          title="Select  Range" id="ee"
+          [dataSource]="dataSourceRange"
+  
+  
+          (onValueChanged)="onValueChanged($event)">
+            <dxo-size [height]="200"  ></dxo-size>
+          <dxo-chart>
+  
+              <dxi-series valueField="y" name="y"></dxi-series>
+              <dxo-size [height]="300"></dxo-size>
+              <dxo-common-series-settings
+                  type="bar"
+                  argumentField="x"
+                   >
+              </dxo-common-series-settings>
+  
+          </dxo-chart>
+          <dxo-scale
+         minorTickInterval="month"
+         valueType="datetime">
+         <dxo-tick-interval [months]="1"></dxo-tick-interval>
+     </dxo-scale>
+      </dx-range-selector>
+  
+  
+  </div>
+  
+  <div id="chart-demo" >
+      <dx-chart
+          title="Prediction for faculty Components"
+          [dataSource]="dataSourceResult">
+          <dxi-series valueField="y" name="original" type="bar"></dxi-series>
+  
+          <dxi-series  valueField="f" name="predicted" type="bar" ></dxi-series>
+  
+          <dxo-common-series-settings
+            #commonSeries
+              argumentField="x"
+            >
+  
+          </dxo-common-series-settings>
+          <dxo-margin [bottom]="20"></dxo-margin>
+          <dxo-argument-axis [valueMarginsEnabled]="false">
+        <dxo-label ></dxo-label>
+          </dxo-argument-axis>
+  
+  
+          <dxo-export [enabled]="true"></dxo-export>
+          <dxo-legend
+              verticalAlignment="bottom"
+              horizontalAlignment="center">
+          </dxo-legend>
+          <dxo-scale
+  
+         valueType="datetime">
+         <dxo-tick-interval [months]="1"></dxo-tick-interval>
+     </dxo-scale>
+      </dx-chart>
+  
+  </div>
+  </div>
+  </div>
+  </div>

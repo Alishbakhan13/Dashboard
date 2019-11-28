@@ -1,0 +1,33 @@
+
+.mat-form-field-infix
+{
+  widows: 250px;
+}
+
+
+
+.example-card {
+width: 300px;
+text-align:center;
+margin: auto;
+opacity: 0.75;
+height: 60vh;
+}
+.mat-card-title{
+font-size: 16px;
+}
+.pad{
+  padding-top: 15vh;  
+}
+
+.mat-raised-button.mat-primary 
+{
+  background-color:lightseagreen;
+}
+.mat-input-element {
+  caret-color: lightseagreen;
+}
+#size {
+
+  font-size:3em;
+}

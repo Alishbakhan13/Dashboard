@@ -1,0 +1,64 @@
+<div class="wrapper">
+  
+      <app-sidebar></app-sidebar>
+
+  <div class="main-panel">
+      <app-navbar></app-navbar>
+      <div class="main-content">
+        <div class="container-fluid">
+            <div class="row " >
+           
+                <div class="card card-chart">
+                    <div class="card-body" >
+               <h4 class="card-title" style="text-align: center">Deficient Components</h4>
+        
+             
+           <div id="chartContainer1"  style="height: 50vh; width: 100%;"></div>
+          </div>
+           </div>
+           </div>
+            <mat-form-field>
+                <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+              </mat-form-field>
+              
+              <div class="mat-elevation-z8">
+                <table  mat-table [dataSource]="dataSource" matTooltip="Info about the action">
+              
+                  <!-- Position Column -->
+                  <ng-container matColumnDef="PartID">
+                    <th mat-header-cell *matHeaderCellDef style="text-align: center;"> Part ID </th>
+                    <td mat-cell *matCellDef="let element"> {{element[0]}} </td>
+                  </ng-container>
+              
+                  <!-- Name Column -->
+                  <ng-container matColumnDef="Vendor">
+                    <th mat-header-cell *matHeaderCellDef style="text-align: center;"> Vendor </th>
+                    <td mat-cell *matCellDef="let element"> {{element[1]}}  </td>
+                  </ng-container>
+               
+                  <!-- Weight Column -->
+                  <ng-container matColumnDef="Reason">
+                    <th mat-header-cell *matHeaderCellDef style="text-align: center;">Reason </th>
+                    <td mat-cell *matCellDef="let element">  {{element[2]}} </td>
+                  </ng-container>
+              
+              
+              
+              
+                      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"  mat-button   (click)="onRowClicked(row)" ></tr>
+              
+                </table>
+              
+                <mat-paginator [length]="5" [pageSize]="4" [pageSizeOptions]="[5, 10, 25]">
+                  </mat-paginator>
+              </div>
+              <app-component-placement></app-component-placement>
+         
+      </div>
+      </div>
+    
+  </div>
+</div>
+
+

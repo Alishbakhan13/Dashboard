@@ -1,0 +1,77 @@
+
+<div class="wrapper">
+
+    <app-sidebar></app-sidebar>
+   
+  <div class="main-panel">
+      <app-navbar></app-navbar>
+     <div class="container-fluid">
+            <div class="row " >
+                <div class="col-md-8" >
+                    <div  class="card">
+                      <div class="card-title" >
+                        <p>{{title}} </p>  
+                      </div>
+                        <div class="card-body" >
+                          
+                          <div id="linechart100" style="width: 100%; height:70vh;overflow: hidden;"></div>
+                        </div>
+                      </div>
+                    </div>
+                 <div class="col-md-4" >
+                    <div class="col-md-12" style="padding-top: 0em;">
+                        <div  class="card" >
+                        
+          
+                            <p  class="card-title" style="text-align:center;">Table Options</p>  
+                             <div class="card-body" style="height:33vh">
+                               
+              
+                                <div class="card-body" style="height:33vh">
+                  
+                                    <form   style="padding-left: 7vw;padding-top:3vh">
+                                      
+                                        <select size="5"     name="selectionField" multiple="yes" > 
+                                         <option value="Packet list "  (click)="func(value)"   id="option">       Packet list      </option>
+                                         <option value="Deficiency "  (click)="func(value)"  id="option">      Deficiency       </option>
+                                         <option value="Source Supply "  (click)="func(value)"   id="option">       Source Supply    </option>
+                                           <option   value="Demand Parts"  id="option"  (click)="func(value)">   Demand Parts    </option>
+                                        
+                                       </select>
+                                         <br><br>
+                                        
+                                       </form>
+                                
+                              
+                            </div>
+                                
+                                   
+                             
+                              </div>
+                            </div>
+                    
+                    
+                    </div>
+                 
+                    <div class="col-md-12" style="padding-top: 0.5em;">
+                        <div  class="card" >
+                   
+          
+                            <p  class="card-title" style="text-align:center;">Result</p>  
+                             <div class="card-body" style="height:33vh">
+                              
+                                  
+                                
+                              
+                            </div>
+                    
+                    
+                    </div>
+                  </div>
+                  </div>
+                   
+              </div>
+          </div>
+        </div>
+    
+    

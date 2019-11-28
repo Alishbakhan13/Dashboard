@@ -1,0 +1,102 @@
+<div class="wrapper">
+
+      <app-sidebar></app-sidebar>
+       </div>
+  <div class="main-panel">
+      <app-navbar></app-navbar>
+      <div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4" >
+                  <div class="card ">
+                          <div class="card-title">
+                              <p  class="text"><img src="assets/img/multiple-users-silhouette.png" >Total</p>
+                          </div>
+                          
+                             <div class="card-body" >
+                                <div id="format"   >{{total}}</div>
+                              
+                             </div>
+                          </div>  
+                   
+                  </div>
+
+                  <div class="col-md-4" >
+                      <div class="card ">
+                              <div class="card-title">
+                                  <p  class="text"><img src="assets/img/thumbs-down-silhouette.png" >Poor</p>
+                              </div>
+                              
+                                 <div class="card-body" >
+                                    <div id="format"   >{{poor}}</div>
+                                  
+                                 </div>
+                              </div>  
+                       
+                      </div>
+             
+                      <div class="col-md-4" >
+                          <div class="card ">
+                                  <div class="card-title">
+                                      <p  class="text"><img src="assets/img/thumbs-up-hand-symbol.png" >Excellent</p>
+                                  </div>
+                                  
+                                     <div class="card-body" >
+                                        <div id="format"   >{{best}}</div>
+                                      
+                                     </div>
+                                  </div>  
+                           
+                          </div>
+           
+              </div>
+        
+              <div class="row">
+                <div class="card card-chart">
+                    <dx-chart
+                    id="chart"
+                    [dataSource]="dataSource"
+                    [title]="title"
+                    [palette]="['#ff7f50','rgb(2,78,134)','#ffd700','#008000']"
+                    (onSeriesClick)="onSeriesClick($event)"
+                    [minBubbleSize]="14"
+                    [maxBubbleSize]="0.12"
+                          >
+                    <dxo-common-series-settings type="bubble"></dxo-common-series-settings>
+                    <dxo-export [enabled]="true"></dxo-export>
+                    <dxo-legend
+                        position="inside"
+                        horizontalAlignment="left">
+                        <dxo-border [visible]="true"></dxo-border>
+                    </dxo-legend>
+                    <dxo-argument-axis title="Time taken">
+                        <dxo-label [customizeText]="argumentCustomizeText"></dxo-label>
+                    </dxo-argument-axis>
+                    <dxi-value-axis title="Faulty Componenets Frequency">
+                        <dxo-label [customizeText]="valueCustomizeText"></dxo-label>
+                    </dxi-value-axis>
+                    <dxo-size [height]="600" ></dxo-size>
+                    <dxo-tooltip
+                        [enabled]="true"
+                        location="edge"
+                        [customizeTooltip]="customizeTooltip">
+                    </dxo-tooltip>
+                    <dxi-series
+                        *ngFor="let correlation of correlationSource"
+                        [name]="correlation.name"
+                        [argumentField]="correlation.argumentField"
+                        [valueField]="correlation.valueField"
+                        [sizeField]="correlation.sizeField"
+                        [tagField]="correlation.tagField">
+                    </dxi-series>
+                </dx-chart>
+                
+        
+                </div>
+        
+        </div>
+        </div>
+        
+    
+  </div>
+</div>

@@ -1,0 +1,17 @@
+
+
+<div class="sidenav"  id="image" style="background-image: url('assets/img/sidebar-3.jpg');background-size: 100% 100%;">
+      <div  id="gg">
+          <a class="navbar-brand" (click)="sethide()" routerLink="/Vendors" routerLinkActive="active"  style="font-size: 1.25em;font-weight: 500;padding-left:4vw;padding-top:1.25vh;padding-bottom: 0.5vh;">Dashboard</a>
+            <hr  style="background-color: honeydew;padding:0;margin:0;">
+    <ul routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item"  style="padding: 0px;margin: 0px;" >
+                
+                <a class="nav-link" [routerLink]="[menuItem.path]" >
+                    <i class=""  style="font-style: normal;"><img src="{{menuItem.icon}}"> {{menuItem.title}} </i>
+                
+                </a>
+                <hr  style="margin:0px">
+              </ul>
+    
+      </div>
+    </div>  

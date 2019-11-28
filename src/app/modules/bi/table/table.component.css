@@ -1,0 +1,126 @@
+h2
+{
+     text-align: center;
+   padding-top:1em;
+   color:	gray;
+   font-weight:800;
+   background-color: transparent;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  border: 3px;
+  color:black;
+  background-color: white ;
+  text-align: center;
+}
+
+th, td {
+  text-align: center;
+
+}
+
+/*td:nth-child(1){background-color: 	#d1d4d6} */
+
+th {
+
+
+  color:	#696969	;
+  font-weight: 600;
+  text-align: center;
+}
+td
+{
+  color:gray;
+
+}
+tr:hover {
+background-color:#F8F8F8;
+}
+.main-content
+{
+    margin-top:50px;
+    padding: 0px;
+}
+#pad
+{
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+ 
+
+.card 
+{
+    padding: 0.5em;
+    padding-top: 1em;
+}
+.card-body
+{
+    padding: 0.5em;
+}
+.col-md-4
+{
+    padding:0.25em;
+    padding-bottom: 0.1em;
+    padding-top:0.1em;
+}
+.card-chart
+{
+margin:1em
+}
+.card-footer
+{
+    padding: 0em;
+}
+
+#vendor::before
+{
+  display: block; 
+  content: " "; 
+  margin-top: 1.2em; 
+  visibility: hidden; 
+}
+
+#shelf::before
+{
+  display: block; 
+  content: " "; 
+  margin-top: 1.2em; 
+  visibility: hidden; 
+}
+
+#revenue::before
+{
+  display: block; 
+  content: " "; 
+  margin-top: 1.2em; 
+  visibility: hidden; 
+}
+#activity::before
+{
+  display: block; 
+  content: " "; 
+  margin-top: 1.2em; 
+  visibility: hidden; 
+}
+#faults::before
+{
+  display: block; 
+  content: " "; 
+  margin-top: 1.2em; 
+  visibility: hidden; 
+}
+#reorder::before
+{
+  display: block; 
+  content: " "; 
+  margin-top: 1.2em; 
+  visibility: hidden; 
+}
+
+
+
+
